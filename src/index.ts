@@ -1,6 +1,6 @@
 import express, {Application, Request, Response, NextFunction} from 'express';
 
-const port = process.env.PORT || 3000;
+const port = Number(process.env.PORT || 3000);
 
 const logRequest = (req: Request, res: Response, next: NextFunction) => {
   console.log(req);
